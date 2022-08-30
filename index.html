@@ -10,12 +10,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="box-border px-10 py-8 flex flex-col items-center min-h-screen">
+    <div
+      class="box-border px-10 py-8 flex flex-col items-center min-h-screen md:grid md:grid-cols-[1fr,4fr] md:p-0"
+    >
       <div
-        class="sticky top-0 px-7 py-5 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white"
+        class="sticky top-0 px-5 py-3 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white md:h-full md:min-w-md"
       >
         <div
-          class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center"
+          class="flex cursor-pointer hover:scale-125 ease-in duration-300 w-12 justify-center"
         >
           <img class="scale-110" src="./images/home.svg" />
         </div>
@@ -35,130 +37,218 @@
           <img class="scale-110" src="./images/menu.svg" />
         </div>
       </div>
-      <div class="flex w-full min-w-sm mt-5 mb-3 items-center">
-        <div class="text-5xl">👋</div>
-        <div class="mx-5">
-          <p>Hi there,</p>
-          <p class="font-bold text-2xl">Hasin Mahmood</p>
+      <div class="md:relative">
+        <div class="flex w-full min-w-sm mt-5 mb-3 items-center">
+          <div class="text-5xl">👋</div>
+          <div class="mx-5">
+            <p>Hi there,</p>
+            <p class="font-bold text-2xl">Hasin Mahmood</p>
+          </div>
         </div>
-      </div>
-      <div class="border-t w-full"></div>
-      <div class="flex w-full min-w-sm justify-start">
-        <p class="font-bold text-2xl my-2">Your Projects</p>
-      </div>
-      <div class="flex flex-col gap-y-4">
-        <div
-          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-        >
-          <p class="font-bold text-2xl my-2">Super Cool Project</p>
-          <div class="border-b w-full"></div>
-
-          <p class="mt-2 line-clamp-1">
-            Proin convallis enim consequat, imperdiet justo eget, pulvinar
-            purus. Vestibulum ac pretium est. Nam in libero at turpis rhoncus
-            ullamcorper a ut ex. Aenean ut gravida dolor. Etiam tincidunt
-            hendrerit mattis. Nam ac ornare metus, at euismod ipsum. Donec non
-            ultrices dolor. Duis gravida dui quis sapien rutrum venenatis.
-            Aenean id nibh congue dui tristique mattis nec vel risus.
-          </p>
+        <div class="border-t w-full"></div>
+        <div class="flex w-full min-w-sm justify-start">
+          <p class="font-bold text-2xl my-2">Your Projects</p>
         </div>
-        <div
-          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-        >
-          <p class="font-bold text-2xl my-2">Less Cool Project</p>
-          <div class="border-b w-full"></div>
-
-          <p class="mt-2 line-clamp-1">
-            Aliquam eget dui nibh. Curabitur eget auctor tortor, id volutpat
-            odio. In condimentum quam dictum, vulputate nunc id, fringilla
-            lorem. Quisque consectetur ante sed felis finibus, vitae dapibus
-            eros semper. In eget tincidunt metus. Proin eget rutrum erat, id
-            rutrum elit. Nunc non nisi dui. Maecenas in purus augue. Cras
-            pellentesque rhoncus lectus in varius. In gravida nibh orci, eget
-            pretium felis vehicula a. Integer dolor odio, laoreet non ipsum et,
-            euismod
-          </p>
-        </div>
-        <div
-          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-        >
-          <p class="font-bold text-2xl my-2">Impossible App</p>
-          <div class="border-b w-full"></div>
-
-          <p class="mt-2 line-clamp-1">
-            Phasellus vulputate faucibus lectus, vitae ultrices orci. Nunc
-            consectetur lacus id venenatis aliquam. Cras commodo lorem orci, sit
-            amet posuere tortor posuere sit amet. Nunc porta tellus id ipsum
-            varius mollis. Donec id convallis libero, a rutrum mi. Mauris quam
-            tortor, aliquet a tortor id, vehicula euismod justo. Vestibulum
-            ullamcorper sed nisl eu mollis. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae; Curabitur
-            interdum od
-          </p>
-        </div>
-        <div
-          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-        >
-          <p class="font-bold text-2xl my-2">Ad Blocker</p>
-          <div class="border-b w-full"></div>
-
-          <p class="mt-2 line-clamp-1">
-            Pellentesque ex enim, auctor non tincidunt ut, pellentesque eget
-            urna. Quisque quis nisl neque. Phasellus placerat ultrices sem, vel
-            convallis erat elementum eu. Phasellus finibus malesuada quam, sed
-            consequat augue sagittis eget. Phasellus auctor varius est eu
-            tempor. Maecenas sollicitudin, lectus sit amet sagittis vestibulum,
-            velit libero eleifend dolor, ut finibus risus nibh id dolor. Nullam
-            in lectus dolor. Nulla vel arcu lorem. Ut eleifend, nulla vitae
-            varius
-          </p>
-        </div>
-      </div>
-      <div class="border-t mt-6 w-full"></div>
-      <div class="flex w-full min-w-sm justify-start">
-        <p class="font-bold text-2xl my-2">Your Projects</p>
-      </div>
-      <div
-        class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-      >
-        <p class="font-bold text-2xl my-2">Site Maintanence</p>
-        <p class="mt-2 line-clamp-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="border-b w-full"></div>
-        <p class="font-bold text-2xl my-2">Community Share Day</p>
-        <p class="mt-2 line-clamp-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="border-b w-full"></div>
-        <p class="font-bold text-2xl my-2">Updated Privacy Policy</p>
-        <p class="mt-2 line-clamp-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div class="border-t mt-6 w-full"></div>
-      <div class="flex w-full min-w-sm justify-start">
-        <p class="font-bold text-2xl my-2">Trending</p>
-      </div>
-      <div
-        class="px-2 py-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
-      >
-        <div class="flex items-center justify-center justify-around">
+        <div class="flex flex-col gap-y-4">
           <div
-            class="flex items-center justify-center rounded-full w-12 h-12 bg-pink-300"
+            class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
           >
-            <img class="scale-125" src="./images/credit_card.svg" />
+            <p class="font-bold text-2xl my-2">Super Cool Project</p>
+            <div class="border-b w-full"></div>
+
+            <p class="mt-2 line-clamp-1">
+              Proin convallis enim consequat, imperdiet justo eget, pulvinar
+              purus. Vestibulum ac pretium est. Nam in libero at turpis rhoncus
+              ullamcorper a ut ex. Aenean ut gravida dolor. Etiam tincidunt
+              hendrerit mattis. Nam ac ornare metus, at euismod ipsum. Donec non
+              ultrices dolor. Duis gravida dui quis sapien rutrum venenatis.
+              Aenean id nibh congue dui tristique mattis nec vel risus.
+            </p>
           </div>
-          <p class="font-bold text-xl my-2">Budget</p>
-          <p class="text-xl my-2">$750.00</p>
-          <div class="flex justify-center w-16 bg-green-300 rounded-md px-2">
-            <p class="text-green-600">30%</p>
+          <div
+            class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <p class="font-bold text-2xl my-2">Less Cool Project</p>
+            <div class="border-b w-full"></div>
+
+            <p class="mt-2 line-clamp-1">
+              Aliquam eget dui nibh. Curabitur eget auctor tortor, id volutpat
+              odio. In condimentum quam dictum, vulputate nunc id, fringilla
+              lorem. Quisque consectetur ante sed felis finibus, vitae dapibus
+              eros semper. In eget tincidunt metus. Proin eget rutrum erat, id
+              rutrum elit. Nunc non nisi dui. Maecenas in purus augue. Cras
+              pellentesque rhoncus lectus in varius. In gravida nibh orci, eget
+              pretium felis vehicula a. Integer dolor odio, laoreet non ipsum
+              et, euismod
+            </p>
+          </div>
+          <div
+            class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <p class="font-bold text-2xl my-2">Impossible App</p>
+            <div class="border-b w-full"></div>
+
+            <p class="mt-2 line-clamp-1">
+              Phasellus vulputate faucibus lectus, vitae ultrices orci. Nunc
+              consectetur lacus id venenatis aliquam. Cras commodo lorem orci,
+              sit amet posuere tortor posuere sit amet. Nunc porta tellus id
+              ipsum varius mollis. Donec id convallis libero, a rutrum mi.
+              Mauris quam tortor, aliquet a tortor id, vehicula euismod justo.
+              Vestibulum ullamcorper sed nisl eu mollis. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae;
+              Curabitur interdum od
+            </p>
+          </div>
+          <div
+            class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <p class="font-bold text-2xl my-2">Ad Blocker</p>
+            <div class="border-b w-full"></div>
+
+            <p class="mt-2 line-clamp-1">
+              Pellentesque ex enim, auctor non tincidunt ut, pellentesque eget
+              urna. Quisque quis nisl neque. Phasellus placerat ultrices sem,
+              vel convallis erat elementum eu. Phasellus finibus malesuada quam,
+              sed consequat augue sagittis eget. Phasellus auctor varius est eu
+              tempor. Maecenas sollicitudin, lectus sit amet sagittis
+              vestibulum, velit libero eleifend dolor, ut finibus risus nibh id
+              dolor. Nullam in lectus dolor. Nulla vel arcu lorem. Ut eleifend,
+              nulla vitae varius
+            </p>
+          </div>
+        </div>
+        <div class="border-t mt-6 w-full"></div>
+        <div class="flex w-full min-w-sm justify-start">
+          <p class="font-bold text-2xl my-2">Your Projects</p>
+        </div>
+        <div
+          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+        >
+          <p class="font-bold text-2xl my-2">Site Maintanence</p>
+          <p class="mt-2 line-clamp-1 mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="border-b w-full"></div>
+          <p class="font-bold text-2xl my-2">Community Share Day</p>
+          <p class="mt-2 line-clamp-1 mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="border-b w-full"></div>
+          <p class="font-bold text-2xl my-2">Updated Privacy Policy</p>
+          <p class="mt-2 line-clamp-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="border-t my-6 w-full"></div>
+        <div
+          class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+        >
+          <div class="flex flex-col gap-y-6">
+            <div class="flex justify-between">
+              <p class="font-bold text-xl my-2">Your Team</p>
+              <p class="text-purple-500 text-xl my-2">See all</p>
+            </div>
+            <div class="flex justify-evenly gap-x-3">
+              <img class="w-12" src="./images/person-profile.svg" />
+              <div class="flex flex-col justify-center ml-3">
+                <p class="text-gray-400">UI Designer</p>
+                <p class="font-bold text-xl">Hasin Mahmood</p>
+              </div>
+              <img class="w-8" src="./images/more.svg" />
+            </div>
+            <div class="flex justify-evenly gap-x-3">
+              <img class="w-12" src="./images/person-profile.svg" />
+              <div class="flex flex-col justify-center ml-3">
+                <p class="text-gray-400">Front End Developer</p>
+                <p class="font-bold text-xl">Subhan Mahmood</p>
+              </div>
+              <img class="w-8" src="./images/more.svg" />
+            </div>
+            <div class="flex justify-evenly gap-x-3">
+              <img class="w-12" src="./images/person-profile.svg" />
+              <div class="flex flex-col justify-center ml-3">
+                <p class="text-gray-400">Marketing Lead</p>
+                <p class="font-bold text-xl">Vardah Mahmood</p>
+              </div>
+              <img class="w-8" src="./images/more.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="border-t my-6 w-full"></div>
+
+        <div class="flex flex-col gap-y-4 w-full min-w-sm">
+          <div
+            class="px-2 py-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <div class="flex items-center justify-center justify-around">
+              <div
+                class="flex items-center justify-center rounded-full w-12 h-12 bg-pink-500"
+              >
+                <img class="scale-125" src="./images/credit_card.svg" />
+              </div>
+              <p class="font-bold text-xl my-2">Budget</p>
+              <p class="text-xl my-2">$750.00</p>
+              <div
+                class="flex justify-center w-16 bg-green-300 rounded-md px-2"
+              >
+                <p class="text-green-600">30%</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-2 py-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <div class="flex items-center justify-center justify-around">
+              <div
+                class="flex items-center justify-center rounded-full w-12 h-12 bg-purple-500"
+              >
+                <img class="scale-125" src="./images/users.svg" />
+              </div>
+              <p class="font-bold text-xl my-2">Projects</p>
+              <p class="text-xl my-2">215</p>
+              <div
+                class="flex justify-center w-16 bg-green-300 rounded-md px-2"
+              >
+                <p class="text-green-600">23%</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-2 py-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <div class="flex items-center justify-center justify-around">
+              <div
+                class="flex items-center justify-center rounded-full w-12 h-12 bg-blue-500"
+              >
+                <img class="scale-125" src="./images/clock.svg" />
+              </div>
+              <p class="font-bold text-xl my-2">Total Hours</p>
+              <p class="text-xl my-2">1.400</p>
+              <div class="flex justify-center w-16 bg-red-300 rounded-md px-2">
+                <p class="text-red-600">10%</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-2 py-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
+          >
+            <div class="flex items-center justify-center justify-around">
+              <div
+                class="flex items-center justify-center rounded-full w-12 h-12 bg-orange-500"
+              >
+                <img class="scale-125" src="./images/briefcase.svg" />
+              </div>
+              <p class="font-bold text-xl my-2">Work Load</p>
+              <p class="text-xl my-2">95%</p>
+              <div
+                class="flex justify-center w-16 bg-green-300 rounded-md px-2"
+              >
+                <p class="text-green-600">13%</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="bg-red-200 h-96 w-full">f</div>
-      <div class="bg-red-200 h-96 w-full">f</div>
-      <div class="bg-red-200 h-96 w-full">f</div> -->
     </div>
   </body>
 </html>
