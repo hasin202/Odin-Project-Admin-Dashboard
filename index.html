@@ -14,10 +14,10 @@
       class="box-border px-10 py-8 flex flex-col items-center min-h-screen md:grid md:grid-cols-[280px,1fr] md:p-0"
     >
       <div
-        class="sticky top-0 px-5 py-3 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white md:h-full md:items-start md:p-6 md:rounded-none"
+        class="sticky top-0 px-5 py-3 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white md:h-full md:items-start md:p-6 md:rounded-none md:relative"
       >
         <div
-          class="flex w-full justify-around md:flex-col md:gap-y-6 md:justify-start"
+          class="flex w-full justify-around md:flex-col md:gap-y-6 md:justify-start md:sticky md:top-6"
         >
           <div
             class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-2 md:mb-2"
@@ -72,33 +72,33 @@
               Integrations
             </p>
           </div>
-          <!-- <div
-            class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-4"
+          <div
+            class="hidden md:inline md:flex md:cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
           >
-            <img class="scale-110" src="./images/icon.svg" />
+            <img class="scale-90" src="./images/users.svg" />
             <p
-              class="hidden md:inline md:font-bold md:text-4xl md:whitespace-nowrap"
+              class="md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
             >
-              Your Dash
+              User
             </p>
           </div>
           <div
-            class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
+            class="hidden md:inline md:flex md:cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
           >
-            <img class="scale-110" src="./images/home.svg" />
-            <p class="hidden md:inline md:font-bold md:text-3xl">Home</p>
+            <img class="scale-90" src="./images/settings.svg" />
+            <p
+              class="md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
+            >
+              Settings
+            </p>
           </div>
-          <div
-            class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
+          <div class="hidden md:inline md:border-t md:w-full"></div>
+          <p
+            class="hidden md:inline md:font-light md:text-xl md:whitespace-nowrap md:text-gray-400"
           >
-            <img class="scale-110" src="./images/profile.svg" />
-          </div>
-          <div
-            class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-4"
-          >
-            <img class="scale-110" src="./images/work.svg" />
-            <p class="hidden md:inline md:font-bold md:text-3xl">Projects</p>
-          </div> -->
+            RESOURCES
+          </p>
+
           <div
             class="flex flex-col justify-center cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
           >
