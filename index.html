@@ -176,11 +176,32 @@
           </div>
         </div>
         <div class="md:px-6 md:py-2">
-          <div class="flex w-full min-w-sm mt-5 mb-3 items-center">
-            <div class="text-5xl">👋</div>
-            <div class="mx-5">
-              <p>Hi there,</p>
-              <p class="font-bold text-2xl">Jay Sean</p>
+          <div
+            class="flex w-full min-w-sm mt-5 mb-3 items-center justify-between"
+          >
+            <div class="flex w-full min-w-sm items-center">
+              <div class="text-5xl">👋</div>
+              <div class="mx-5 md:flex md:items-center">
+                <p class="md:hidden">Hi there,</p>
+                <p class="hidden md:inline md:font-bold md:text-2xl">
+                  Hi&nbsp;
+                </p>
+                <p class="font-bold text-2xl md:whitespace-nowrap">Jay Sean!</p>
+              </div>
+            </div>
+            <div
+              class="hidden md:inline md:flex md:w-full md:min-w-sm md:items-center md:gap-x-3 md:justify-end"
+            >
+              <div
+                class="hidden md:flex md:items-center md:px-4 md:py-2 md:inline md:rounded md:bg-white md:border md:border-gray-200 md:h-10"
+              >
+                <p class="font-bold">Share</p>
+              </div>
+              <div
+                class="hidden md:flex md:items-center md:px-4 md:py-2 md:inline md:rounded md:bg-purple-600 md:h-10"
+              >
+                <p class="font-bold text-white">Create</p>
+              </div>
             </div>
           </div>
           <div class="border-t w-full"></div>
