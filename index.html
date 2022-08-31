@@ -11,38 +11,107 @@
   </head>
   <body>
     <div
-      class="box-border px-10 py-8 flex flex-col items-center min-h-screen md:grid md:grid-cols-[1fr,4fr] md:p-0"
+      class="box-border px-10 py-8 flex flex-col items-center min-h-screen md:grid md:grid-cols-[280px,1fr] md:p-0"
     >
       <div
-        class="sticky top-0 px-5 py-3 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white md:h-full md:min-w-md"
+        class="sticky top-0 px-5 py-3 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-lg flex items-center justify-around bg-white md:h-full md:items-start md:p-6 md:rounded-none"
       >
         <div
-          class="flex cursor-pointer hover:scale-125 ease-in duration-300 w-12 justify-center"
+          class="flex w-full justify-around md:flex-col md:gap-y-6 md:justify-start"
         >
-          <img class="scale-110" src="./images/home.svg" />
-        </div>
-        <div
-          class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center"
-        >
-          <img class="scale-110" src="./images/profile.svg" />
-        </div>
-        <div
-          class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center"
-        >
-          <img class="scale-110" src="./images/message.svg" />
-        </div>
-        <div
-          class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center"
-        >
-          <img class="scale-110" src="./images/menu.svg" />
+          <div
+            class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-2 md:mb-2"
+          >
+            <img
+              class="scale-75 md:scale-100"
+              src="./images/dashboard_big.svg"
+            />
+            <p
+              class="hidden md:inline md:font-bold md:text-3xl md:whitespace-nowrap"
+            >
+              Your Dash
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
+          >
+            <img class="scale-125 md:scale-90" src="./images/work.svg" />
+            <p
+              class="hidden md:inline md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
+            >
+              Projects
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
+          >
+            <img class="scale-125 md:scale-90" src="./images/task.svg" />
+            <p
+              class="hidden md:inline md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
+            >
+              Tasks
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
+          >
+            <img class="scale-110 md:scale-90" src="./images/file-text.svg" />
+            <p
+              class="hidden md:inline md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
+            >
+              Files
+            </p>
+          </div>
+          <div
+            class="hidden md:inline md:flex md:cursor-pointer md:flex md:inline md:items-center md:flex-row md:gap-x-4 md:justify-start"
+          >
+            <img class="scale-90" src="./images/integration.svg" />
+            <p
+              class="md:text-xl md:after:content-['›'] md:after:ml-auto md:w-44 md:flex md:justify-around"
+            >
+              Integrations
+            </p>
+          </div>
+          <!-- <div
+            class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-4"
+          >
+            <img class="scale-110" src="./images/icon.svg" />
+            <p
+              class="hidden md:inline md:font-bold md:text-4xl md:whitespace-nowrap"
+            >
+              Your Dash
+            </p>
+          </div>
+          <div
+            class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
+          >
+            <img class="scale-110" src="./images/home.svg" />
+            <p class="hidden md:inline md:font-bold md:text-3xl">Home</p>
+          </div>
+          <div
+            class="flex flex-col cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
+          >
+            <img class="scale-110" src="./images/profile.svg" />
+          </div>
+          <div
+            class="flex flex-col cursor-pointer md:flex md:inline md:w-12 md:items-center md:flex-row md:gap-x-4"
+          >
+            <img class="scale-110" src="./images/work.svg" />
+            <p class="hidden md:inline md:font-bold md:text-3xl">Projects</p>
+          </div> -->
+          <div
+            class="flex flex-col justify-center cursor-pointer hover:scale-125 ease-in duration-300 w-12 items-center md:hidden"
+          >
+            <img class="scale-125" src="./images/menu.svg" />
+          </div>
         </div>
       </div>
-      <div class="md:relative">
+      <div class="md:relative md:p-8">
         <div class="flex w-full min-w-sm mt-5 mb-3 items-center">
           <div class="text-5xl">👋</div>
           <div class="mx-5">
             <p>Hi there,</p>
-            <p class="font-bold text-2xl">Hasin Mahmood</p>
+            <p class="font-bold text-2xl">Jay Sean</p>
           </div>
         </div>
         <div class="border-t w-full"></div>
@@ -119,7 +188,7 @@
         </div>
         <div class="border-t mt-6 w-full"></div>
         <div class="flex w-full min-w-sm justify-start">
-          <p class="font-bold text-2xl my-2">Your Projects</p>
+          <p class="font-bold text-2xl my-2">Announcments</p>
         </div>
         <div
           class="p-4 h-fit w-full min-w-sm rounded-xl border border-gray-200 shadow-md bg-white border-l-8 border-l-yellow-500"
@@ -150,25 +219,25 @@
             </div>
             <div class="flex justify-evenly gap-x-3">
               <img class="w-12" src="./images/person-profile.svg" />
-              <div class="flex flex-col justify-center ml-3">
+              <div class="flex flex-col justify-around ml-3">
                 <p class="text-gray-400">UI Designer</p>
-                <p class="font-bold text-xl">Hasin Mahmood</p>
+                <p class="font-bold text-xl">Billy Bob Lewis</p>
               </div>
               <img class="w-8" src="./images/more.svg" />
             </div>
             <div class="flex justify-evenly gap-x-3">
               <img class="w-12" src="./images/person-profile.svg" />
-              <div class="flex flex-col justify-center ml-3">
+              <div class="flex flex-col justify-around ml-3">
                 <p class="text-gray-400">Front End Developer</p>
-                <p class="font-bold text-xl">Subhan Mahmood</p>
+                <p class="font-bold text-xl">Sarah Pligh</p>
               </div>
               <img class="w-8" src="./images/more.svg" />
             </div>
             <div class="flex justify-evenly gap-x-3">
               <img class="w-12" src="./images/person-profile.svg" />
-              <div class="flex flex-col justify-center ml-3">
+              <div class="flex flex-col justify-around ml-3">
                 <p class="text-gray-400">Marketing Lead</p>
-                <p class="font-bold text-xl">Vardah Mahmood</p>
+                <p class="font-bold text-xl">Patrick Stewart</p>
               </div>
               <img class="w-8" src="./images/more.svg" />
             </div>
